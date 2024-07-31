@@ -96,6 +96,17 @@ let calcScrollValue = () => {
   
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;*/
+
+// scroll progress
+window.addEventListener('scroll', function() {
+  const progressElement = document.getElementById('progress');
+  
+  if (window.scrollY > 100) {
+      progressElement.style.display = 'grid'; // Show the element when scrolled down 100px
+  } else {
+      progressElement.style.display = 'none'; // Hide the element when at the top
+  }
+});
   
 
 
