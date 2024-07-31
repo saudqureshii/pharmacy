@@ -873,7 +873,7 @@ html {
 /*--whatsapp*/
 /*--scrolltotop*/
 
-#progress{
+#progress {
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -884,11 +884,12 @@ html {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  display: none; /* Initially hide the element */
 }
-#progress-value{
+#progress-value {
   display: block;
-  height: calc(100% -15px);
-  width: calc(100% -15px);
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
   background-color: #ffffff;
   border-radius: 50%;
   display: grid;
